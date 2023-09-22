@@ -1,9 +1,40 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2023.1">
   <Nodes>
-    <Node ToolID="139">
+    <Node ToolID="175">
+      <GuiSettings>
+        <Position x="9042" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"ARROND_UNITS","ARROND_DETERIOATION_LOGEMENTS","ARROND_SALUBRITES","ARROND_PERMITS","ARROND_VACANCIES","ARROND_EXTERMINATIONS","ARROND_TREES","ARROND_RUELLES_VERTES"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="176">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="6930" y="174" />
+        <Position x="9234" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -23,36 +54,27 @@ INCIDENT_NOM_ARROND - Ascending</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
     </Node>
-    <Node ToolID="138">
-      <GuiSettings>
-        <Position x="6762" y="174" />
+    <Node ToolID="177">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="9138" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="Check Box (135)">False</Value>
-          <Value name="Check Box (136)">False</Value>
-          <Value name="List Box (11)">"INCIDENT_YEAR","INCIDENT_MONTH","INCIDENT_DESCRIPTION_GROUPE","INCIDENT_NOM_ARROND","NUMBER_OF_INCIDENTS","ARROND_DETERIOATION_LOGEMENTS","ARROND_SALUBRITES","ARROND_PERMITS","ARROND_VACANCIES","ARROND_EXTERMINATIONS"</Value>
-          <Value name="Check Box (84)">True</Value>
-          <Value name="Check Box (117)">True</Value>
-          <Value name="Check Box (15)">False</Value>
-          <Value name="Check Box (109)">False</Value>
-          <Value name="Check Box (122)">False</Value>
-          <Value name="Check Box (53)">False</Value>
-          <Value name="Check Box (58)">False</Value>
-          <Value name="Check Box (70)">False</Value>
-          <Value name="Check Box (77)">False</Value>
-          <Value name="Drop Down (81)">upper</Value>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="INCIDENT_NOM_ARROND_NEW" selected="True" rename="INCIDENT_NOM_ARROND" />
+            <SelectField field="INCIDENT_NOM_ARROND" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
-      <EngineSettings Macro="Cleanse.yxmc" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -680,7 +702,7 @@ INCIDENT_NOM_ARROND_NEW - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2308" y="63" width="4383" height="560" />
+        <Position x="2308" y="63" width="6639" height="560" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -699,7 +721,7 @@ INCIDENT_NOM_ARROND_NEW - Ascending</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="3173" y="113" width="853" height="408" />
+            <Position x="3173" y="113" width="853" height="407" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -718,7 +740,7 @@ INCIDENT_NOM_ARROND_NEW - Ascending</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="56">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="3198" y="330" />
+                <Position x="3198" y="329" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1108,7 +1130,7 @@ EXTERMINATION_MONTH...</DefaultAnnotationText>
         </Node>
         <Node ToolID="103">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="5093" y="113" width="745" height="387" />
+            <Position x="5093" y="112" width="745" height="387" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1214,7 +1236,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="99">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-                <Position x="5370" y="354" />
+                <Position x="5370" y="353" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1245,7 +1267,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="101">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-                <Position x="5586" y="162" />
+                <Position x="5586" y="161" />
               </GuiSettings>
               <Properties>
                 <Configuration joinByRecordPos="False">
@@ -1279,7 +1301,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="102">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-                <Position x="5754" y="162" />
+                <Position x="5754" y="161" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1319,7 +1341,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="72">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="4086" y="378" />
+                <Position x="4086" y="377" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1385,7 +1407,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="74">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-                <Position x="4386" y="378" />
+                <Position x="4386" y="377" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1405,7 +1427,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
             </Node>
             <Node ToolID="75">
               <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-                <Position x="4494" y="378" />
+                <Position x="4494" y="377" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1425,7 +1447,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
             </Node>
             <Node ToolID="77">
               <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-                <Position x="4602" y="378" />
+                <Position x="4602" y="377" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1449,7 +1471,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
             </Node>
             <Node ToolID="82">
               <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-                <Position x="4698" y="378" />
+                <Position x="4698" y="377" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1546,7 +1568,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="2333" y="113" width="805" height="375" />
+            <Position x="2333" y="112" width="805" height="375" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1565,7 +1587,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="44">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="2358" y="282" />
+                <Position x="2358" y="281" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1606,7 +1628,7 @@ PERMIT_MONTH = DATETIMEFORMAT([d...</DefaultAnnotationText>
             </Node>
             <Node ToolID="45">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-                <Position x="2478" y="282" />
+                <Position x="2478" y="281" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1626,7 +1648,7 @@ DETERIOATION_MONTH =...</DefaultAnnotationText>
             </Node>
             <Node ToolID="46">
               <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-                <Position x="2694" y="282" />
+                <Position x="2694" y="281" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1646,7 +1668,7 @@ DETERIOATION_MONTH =...</DefaultAnnotationText>
             </Node>
             <Node ToolID="47">
               <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-                <Position x="2574" y="282" />
+                <Position x="2574" y="281" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1667,7 +1689,7 @@ DETERIOATION_MONTH =...</DefaultAnnotationText>
             </Node>
             <Node ToolID="51">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-                <Position x="2922" y="162" />
+                <Position x="2922" y="161" />
               </GuiSettings>
               <Properties>
                 <Configuration joinByRecordPos="False">
@@ -1702,7 +1724,7 @@ DETERIOATION_MONTH =...</DefaultAnnotationText>
             </Node>
             <Node ToolID="83">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-                <Position x="3054" y="162" />
+                <Position x="3054" y="161" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1721,7 +1743,7 @@ DETERIOATION_MONTH =...</DefaultAnnotationText>
             </Node>
             <Node ToolID="119">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-                <Position x="2814" y="282" />
+                <Position x="2814" y="281" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1741,13 +1763,826 @@ arrondissement - Ascending</DefaultAnnotationText>
             </Node>
           </ChildNodes>
         </Node>
+        <Node ToolID="149">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="6725" y="137" width="685" height="277" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Adding Number of Units</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Adding Number of Units</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="144">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="6750" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv</File>
+                  <FormatSpecificOptions>
+                    <HeaderRow>True</HeaderRow>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <ImportLine>1</ImportLine>
+                    <FieldLen>254</FieldLen>
+                    <SingleThreadRead>False</SingleThreadRead>
+                    <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                    <Delimeter>,</Delimeter>
+                    <QuoteRecordBreak>False</QuoteRecordBreak>
+                    <CodePage>28591</CodePage>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>nombrelogementsquartiersreference.csv</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="No_QR" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                    <Field name="Nom_QR" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                    <Field name="No_arr" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                    <Field name="Nom_arr_Montreal" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                    <Field name="Nom_mun" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                    <Field name="Nb_log" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\nombrelogementsquartiersreference.csv" type="V_String" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+            <Node ToolID="146">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="7038" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="Nom_arr_Montreal" action="GroupBy" rename="Nom_arr_Montreal" />
+                    <SummarizeField field="Nb_log" action="Sum" rename="ARROND_UNITS" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="147">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="6894" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Nb_log" selected="True" type="Int64" size="8" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="150">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="7038" y="330" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="19" />
+                  <Fields>
+                    <Field name="Nom_arr_Montreal" />
+                    <Field name="Arrondissment" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>Anjou</c>
+                      <c>Anjou</c>
+                    </r>
+                    <r>
+                      <c>Saint-LÃ©onard</c>
+                      <c>Saint-Leonard</c>
+                    </r>
+                    <r>
+                      <c>L'Ãle-BizardâSainte-GeneviÃ¨ve</c>
+                      <c>L'Ile-Bizard-Sainte-Genvieve</c>
+                    </r>
+                    <r>
+                      <c>VillerayâSaint-MichelâParc-Extension</c>
+                      <c>Villeray-Saint-Michel-Parc-Extension</c>
+                    </r>
+                    <r>
+                      <c>LaSalle</c>
+                      <c>LaSalle</c>
+                    </r>
+                    <r>
+                      <c>Saint-Laurent</c>
+                      <c>Saint-Laurent</c>
+                    </r>
+                    <r>
+                      <c>RiviÃ¨re-des-PrairiesâPointe-aux-Trembles</c>
+                      <c>Riviere-des-Prairies-Pointe-aux-Trembles</c>
+                    </r>
+                    <r>
+                      <c>Lachine</c>
+                      <c>Lachine</c>
+                    </r>
+                    <r>
+                      <c>Pierrefonds-Roxboro</c>
+                      <c>Pierrefonds-Roxboro</c>
+                    </r>
+                    <r>
+                      <c>Outremont</c>
+                      <c>Outremont</c>
+                    </r>
+                    <r>
+                      <c>Ville-Marie</c>
+                      <c>Ville-Marie</c>
+                    </r>
+                    <r>
+                      <c>Le Sud-Ouest</c>
+                      <c>Le Sud-Ouest</c>
+                    </r>
+                    <r>
+                      <c>Le Plateau-Mont-Royal</c>
+                      <c>Le Plateau-Mont-Royal</c>
+                    </r>
+                    <r>
+                      <c>MontrÃ©al-Nord</c>
+                      <c>Montreal-Nord</c>
+                    </r>
+                    <r>
+                      <c>RosemontâLa Petite-Patrie</c>
+                      <c>Rosemont-La Petite-Patrie</c>
+                    </r>
+                    <r>
+                      <c>Verdun</c>
+                      <c>Verdun</c>
+                    </r>
+                    <r>
+                      <c>CÃ´te-des-NeigesâNotre-Dame-de-GrÃ¢ce</c>
+                      <c>Cote-des-Neiges-Notre-Dame-de-Grace</c>
+                    </r>
+                    <r>
+                      <c>MercierâHochelaga-Maisonneuve</c>
+                      <c>Mercier-Hochelaga-Maisonneuve</c>
+                    </r>
+                    <r>
+                      <c>Ahuntsic-Cartierville</c>
+                      <c>Ahuntsic-Cartierville</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="151">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="7170" y="294" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="Nom_arr_Montreal" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="Nom_arr_Montreal" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="True" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Left_Nom_arr_Montreal" selected="False" input="Left_" />
+                        <SelectField field="Right_Arrondissment" selected="True" input="Right_" />
+                        <SelectField field="Left_ARROND_UNITS" selected="True" input="Left_" />
+                        <SelectField field="Right_Nom_arr_Montreal" selected="False" rename="Right_Nom_arr_Montreal" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+            <Node ToolID="152">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="7326" y="186" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="INCIDENT_NOM_ARROND_NEW" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="Arrondissment" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="True" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Left_INCIDENT_YEAR" selected="True" input="Left_" />
+                        <SelectField field="Left_INCIDENT_MONTH" selected="True" input="Left_" />
+                        <SelectField field="Left_INCIDENT_DESCRIPTION_GROUPE" selected="True" input="Left_" />
+                        <SelectField field="Left_INCIDENT_NOM_ARROND_NEW" selected="True" input="Left_" />
+                        <SelectField field="Left_INCIDENT_NOM_ARROND" selected="True" input="Left_" />
+                        <SelectField field="Left_NUMBER_OF_INCIDENTS" selected="True" input="Left_" />
+                        <SelectField field="Left_CASERNE" selected="True" input="Left_" />
+                        <SelectField field="Left_NO_CIVIQUE" selected="True" input="Left_" />
+                        <SelectField field="Left_CASERNE_RUE" selected="True" input="Left_" />
+                        <SelectField field="Left_CASERNE_LATITUDE" selected="True" input="Left_" />
+                        <SelectField field="Left_CASERNE_LONGITUDE" selected="True" input="Left_" />
+                        <SelectField field="Left_MTM8_X" selected="True" input="Left_" />
+                        <SelectField field="Left_MTM8_Y" selected="True" input="Left_" />
+                        <SelectField field="Right_ARROND_UNITS" selected="True" input="Right_" />
+                        <SelectField field="Left_ARROND_DETERIOATION_LOGEMENTS" selected="True" input="Left_" />
+                        <SelectField field="Left_ARROND_SALUBRITES" selected="True" input="Left_" />
+                        <SelectField field="Left_ARROND_PERMITS" selected="True" input="Left_" />
+                        <SelectField field="Left_ARROND_VACANCIES" selected="True" input="Left_" />
+                        <SelectField field="Left_ARROND_EXTERMINATIONS" selected="True" input="Left_" />
+                        <SelectField field="Right_Arrondissment" selected="False" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="165">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="7481" y="149" width="625" height="265" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Adding Number of Trees</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Adding Number of Trees</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="155">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="7506" y="222" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv</File>
+                  <FormatSpecificOptions>
+                    <HeaderRow>True</HeaderRow>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <ImportLine>1</ImportLine>
+                    <FieldLen>254</FieldLen>
+                    <SingleThreadRead>False</SingleThreadRead>
+                    <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                    <Delimeter>,</Delimeter>
+                    <QuoteRecordBreak>False</QuoteRecordBreak>
+                    <CodePage>28591</CodePage>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>arbres-publics.csv</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="INV_TYPE" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="EMP_NO" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="ARROND" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="ARROND_NOM" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Rue" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="COTE" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="No_civique" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Emplacement" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Coord_X" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Coord_Y" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="SIGLE" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Essence_latin" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Essence_fr" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="ESSENCE_ANG" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="DHP" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Date_releve" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Date_plantation" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="LOCALISATION" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="CODE_PARC" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="NOM_PARC" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Longitude" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                    <Field name="Latitude" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\arbres-publics.csv" type="V_String" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+            <Node ToolID="157">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="7650" y="222" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="ARROND_NOM" action="GroupBy" rename="ARROND_NOM" />
+                    <SummarizeField field="INV_TYPE" action="Count" rename="ARROND_TREES" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="161">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="7626" y="330" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="15" />
+                  <Fields>
+                    <Field name="ARROND_NOM" />
+                    <Field name="Arrondissement" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>Anjou</c>
+                      <c>Anjou</c>
+                    </r>
+                    <r>
+                      <c>Rosemont - La Petite-Patrie</c>
+                      <c>Rosemont-La Petite-Patrie</c>
+                    </r>
+                    <r>
+                      <c>Ahuntsic - Cartierville</c>
+                      <c>Ahuntsic-Cartierville</c>
+                    </r>
+                    <r>
+                      <c>Saint-LÃ©onard</c>
+                      <c>Saint-Leonard</c>
+                    </r>
+                    <r>
+                      <c>LaSalle</c>
+                      <c>LaSalle</c>
+                    </r>
+                    <r>
+                      <c>Saint-Laurent</c>
+                      <c>Saint-Laurent</c>
+                    </r>
+                    <r>
+                      <c>Pierrefonds - Roxboro</c>
+                      <c>Pierrefonds-Roxboro</c>
+                    </r>
+                    <r>
+                      <c>RiviÃ¨re-des-Prairies - Pointe-aux-Trembles</c>
+                      <c>Riviere-des-Prairies-Pointe-aux-Trembles</c>
+                    </r>
+                    <r>
+                      <c>Ville-Marie</c>
+                      <c>Ville-Marie</c>
+                    </r>
+                    <r>
+                      <c>Le Sud-Ouest</c>
+                      <c>Le Sud-Ouest</c>
+                    </r>
+                    <r>
+                      <c>Le Plateau-Mont-Royal</c>
+                      <c>Le Plateau-Mont-Royal</c>
+                    </r>
+                    <r>
+                      <c>Verdun</c>
+                      <c>Verdun</c>
+                    </r>
+                    <r>
+                      <c>CÃ´te-des-Neiges - Notre-Dame-de-GrÃ¢ce</c>
+                      <c>Cote-des-Neiges-Notre-Dame-de-Grace</c>
+                    </r>
+                    <r>
+                      <c>Mercier - Hochelaga-Maisonneuve</c>
+                      <c>Mercier-Hochelaga-Maisonneuve</c>
+                    </r>
+                    <r>
+                      <c>Villeray-Saint-Michel - Parc-Extension</c>
+                      <c>Villeray-Saint-Michel-Parc-Extension</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="162">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="7746" y="234" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="ARROND_NOM" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="ARROND_NOM" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="True" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Right_Arrondissement" selected="True" rename="ARROND_NOM" input="Right_" />
+                        <SelectField field="Left_ARROND_NOM" selected="False" input="Left_" />
+                        <SelectField field="Left_ARROND_TREES" selected="True" input="Left_" />
+                        <SelectField field="Right_ARROND_NOM" selected="False" rename="Right_ARROND_NOM" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+            <Node ToolID="164">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="7878" y="198" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="INCIDENT_NOM_ARROND_NEW" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="ARROND_NOM" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="False" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Right_ARROND_NOM" selected="False" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+            <Node ToolID="166">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="8022" y="198" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="174">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="8177" y="149" width="745" height="313" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Adding Number of Ruelles Vertes</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Adding Number of Ruelles Vertes</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="154">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="8202" y="306" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv</File>
+                  <FormatSpecificOptions>
+                    <HeaderRow>True</HeaderRow>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <ImportLine>1</ImportLine>
+                    <FieldLen>254</FieldLen>
+                    <SingleThreadRead>False</SingleThreadRead>
+                    <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                    <Delimeter>,</Delimeter>
+                    <QuoteRecordBreak>False</QuoteRecordBreak>
+                    <CodePage>28591</CodePage>
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>ruelles-vertes.csv</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="ID_TRC" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="PROPRIETAIRE_REF" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="CODE_ARR" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="FORME" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="RUELLE_ID" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="DATE_AMENAGEMENT" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="DATE_BONIFICATION" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="CIRCULATION" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="TYPE_AMENAGEMENT" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="TYPE_RECOUVREMENT" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="SUPERFICIE_RUELLE_M2" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="SUPERFICIE_VERDISSEMENT_M2" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="NUMERO_DE_RESOLUTION" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                    <Field name="DATE_MAJ" size="254" source="File: C:\Users\romya\Desktop\McGill\Capstone\Data\Additional Datasets\ruelles-vertes.csv" type="V_String" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+            <Node ToolID="167">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="8334" y="306" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="168">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="8454" y="306" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="PROPRIETAIRE_REF" action="GroupBy" rename="PROPRIETAIRE_REF" />
+                    <SummarizeField field="ID_TRC" action="Count" rename="ARROND_RUELLES_VERTES" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="170">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="8454" y="378" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="11" />
+                  <Fields>
+                    <Field name="PROPRIETAIRE_REF" />
+                    <Field name="Arrondissement" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>Rosemont - La Petite-Patrie</c>
+                      <c>Rosemont-La Petite-Patrie</c>
+                    </r>
+                    <r>
+                      <c>Ahuntsic - Cartierville</c>
+                      <c>Ahuntsic-Cartierville</c>
+                    </r>
+                    <r>
+                      <c>Outremont</c>
+                      <c>Outremont</c>
+                    </r>
+                    <r>
+                      <c>Sud-Ouest</c>
+                      <c>Le Sud-Ouest</c>
+                    </r>
+                    <r>
+                      <c>Ville-Marie</c>
+                      <c>Ville-Marie</c>
+                    </r>
+                    <r>
+                      <c>Villeray - St-Michel - Parc-Extension</c>
+                      <c>Villeray-Saint-Michel-Parc-Extension</c>
+                    </r>
+                    <r>
+                      <c>Verdun</c>
+                      <c>Verdun</c>
+                    </r>
+                    <r>
+                      <c>CÃ´te-Des-Neiges - Notre-Dame-de-GrÃ¢ce</c>
+                      <c>Cote-des-Neiges-Notre-Dame-de-Grace</c>
+                    </r>
+                    <r>
+                      <c>Montreal-Nord</c>
+                      <c>Montreal-Nord</c>
+                    </r>
+                    <r>
+                      <c>Plateau - Mont-Royal</c>
+                      <c>Le Plateau-Mont-Royal</c>
+                    </r>
+                    <r>
+                      <c>Mercier - Hochelaga-Maisonneuve</c>
+                      <c>Mercier-Hochelaga-Maisonneuve</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="171">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="8574" y="318" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="PROPRIETAIRE_REF" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="PROPRIETAIRE_REF" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="True" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Left_PROPRIETAIRE_REF" selected="False" input="Left_" />
+                        <SelectField field="Right_Arrondissement" selected="True" input="Right_" />
+                        <SelectField field="Left_ARROND_RUELLES_VERTES" selected="True" input="Left_" />
+                        <SelectField field="Right_PROPRIETAIRE_REF" selected="False" rename="Right_PROPRIETAIRE_REF" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+            <Node ToolID="172">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+                <Position x="8706" y="210" />
+              </GuiSettings>
+              <Properties>
+                <Configuration joinByRecordPos="False">
+                  <JoinInfo connection="Left">
+                    <Field field="INCIDENT_NOM_ARROND_NEW" />
+                  </JoinInfo>
+                  <JoinInfo connection="Right">
+                    <Field field="Arrondissement" />
+                  </JoinInfo>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Join">
+                      <OrderChanged value="False" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Right_Arrondissement" selected="False" input="Right_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+            </Node>
+            <Node ToolID="173">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="8838" y="198" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+          </ChildNodes>
+        </Node>
       </ChildNodes>
     </Node>
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="138" Connection="Output26" />
-      <Destination ToolID="139" Connection="Input" />
+      <Origin ToolID="175" Connection="Output26" />
+      <Destination ToolID="177" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="177" Connection="Output" />
+      <Destination ToolID="176" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="21" Connection="Output" />
@@ -1907,7 +2742,11 @@ arrondissement - Ascending</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="110" Connection="Output" />
-      <Destination ToolID="138" Connection="Input2" />
+      <Destination ToolID="152" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Join" />
+      <Destination ToolID="152" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="97" Connection="Output" />
@@ -1996,6 +2835,86 @@ arrondissement - Ascending</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="83" Connection="Output" />
       <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="151" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="151" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Output" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Join" />
+      <Destination ToolID="164" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="162" Connection="Join" />
+      <Destination ToolID="164" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="155" Connection="Output" />
+      <Destination ToolID="157" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="157" Connection="Output" />
+      <Destination ToolID="162" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="161" Connection="Output" />
+      <Destination ToolID="162" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="164" Connection="Left" />
+      <Destination ToolID="166" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="164" Connection="Join" />
+      <Destination ToolID="166" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="166" Connection="Output" />
+      <Destination ToolID="172" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="171" Connection="Join" />
+      <Destination ToolID="172" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="167" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="167" Connection="Output" />
+      <Destination ToolID="168" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="168" Connection="Output" />
+      <Destination ToolID="171" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="170" Connection="Output" />
+      <Destination ToolID="171" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="172" Connection="Left" />
+      <Destination ToolID="173" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="172" Connection="Join" />
+      <Destination ToolID="173" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="175" Connection="Input2" />
     </Connection>
   </Connections>
   <Properties>
