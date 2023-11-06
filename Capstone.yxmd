@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="278">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="22779" y="116" width="1055" height="313" />
+        <Position x="22779" y="115" width="1054" height="324" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,7 +72,7 @@ INCIDENT_NOM_ARROND - Ascending</DefaultAnnotationText>
         </Node>
         <Node ToolID="177">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="22888" y="165" />
+            <Position x="22888" y="164" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -262,7 +262,7 @@ INCIDENT_NOM_ARROND - Ascending</DefaultAnnotationText>
         </Node>
         <Node ToolID="258">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="23719" y="283" />
+            <Position x="23718" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -272,7 +272,7 @@ INCIDENT_NOM_ARROND - Ascending</DefaultAnnotationText>
               <FormatSpecificOptions>
                 <PreserveFormat>False</PreserveFormat>
                 <SkipFieldNames>False</SkipFieldNames>
-                <OutputOption>Create</OutputOption>
+                <OutputOption>RemoveFile</OutputOption>
               </FormatSpecificOptions>
               <MultiFile value="False" />
             </Configuration>
@@ -282,12 +282,15 @@ INCIDENT_NOM_ARROND - Ascending</DefaultAnnotationText>
 Query=Alteryx Output</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
         <Node ToolID="733">
           <GuiSettings Plugin="AlteryxConnectorGui.AmazonS3Upload.AmazonS3Upload">
-            <Position x="23671" y="235" />
+            <Position x="23718" y="222" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -4206,9 +4209,6 @@ INCIDENT_NOM_ARROND_NEW - Ascending</DefaultAnnotationText>
                   <DefaultAnnotationText />
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
               </Properties>
               <EngineSettings Macro="Predictive Tools\Stepwise.yxmc" />
             </Node>
@@ -4487,7 +4487,7 @@ INCIDENT_NOM_ARROND_NEW - Ascending</DefaultAnnotationText>
         </Node>
         <Node ToolID="246">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="25997" y="165" width="455" height="284" />
+            <Position x="25997" y="165" width="455" height="241" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -6271,9 +6271,6 @@ Neighborhood Spatial Object = [C...</DefaultAnnotationText>
                   <DefaultAnnotationText />
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
               </Properties>
               <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
             </Node>
