@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="114" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -32,7 +32,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="546" y="114" />
+        <Position x="582" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -51,15 +51,12 @@
           <DefaultAnnotationText>forecast_shape.shp</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="222" />
+        <Position x="138" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -95,7 +92,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="198" y="54" />
+        <Position x="246" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -115,7 +112,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="210" y="222" />
+        <Position x="246" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -136,7 +133,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="354" y="114" />
+        <Position x="390" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -165,6 +162,338 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">.\fire_dataset.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>65001</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>fire_dataset.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="INCIDENT_YEAR" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="INCIDENT_MONTH" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="INCIDENT_NOM_ARROND" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="NUMBER_OF_INCIDENTS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="CASERNE" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="AVERAGE_DISTANCE" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_POPULATION" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_UNITS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_DETERIOATION_LOGEMENTS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_SALUBRITES" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_PERMITS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_VACANCIES" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_TREES" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_RUELLES_VERTES" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_AVG_CONSTRUCTION_YEAR" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_EXTERMINATIONS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="AVERAGE_TEMP" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_AIDE_ALIMENTAIRE" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="AVG_NUMBER_OF_INCIDENTS" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_INFRACTIONS_ENTRAINANT_MORT" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="ARROND_INTRODUCTION" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="10_22_avec_feu" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__s_vict__av__feu___pont" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__s_vict__av__feu___v_r_" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__s_vict__feu___train_métro" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__sans_vict__av__feu___ext_" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__sans_vict__av__feu_tunnel" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__vict__feu___tunnel_F7_MOU" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__victime_feu___bâtiment" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__victime_feu___pont" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__victime_feu___voie_rapide" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Acc__victime_feu_ext_" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Aéroport_10_07" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Aéroport_10_09" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Déchets_en_feu" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Explosion" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu___2e_Alerte" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu___3e_Alerte" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu___4e_Alerte" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu___5e_Alerte" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu___Agravation_possible" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_d_auto__voie_rapide_" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_bâtiment" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_champ__" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_cheminée__" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_cuisinière" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_cuisson" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_nature_électrique" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_navire_bâteau" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_véhicule_extérieur" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_véhicule_intérieur" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_de_véhicule_sur_pont" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="feu_de_véhicule_tunnel_F7_MOU" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Feu_véh__convoi__train_métro_" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Fumée___puit_d_accès" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Incendie_de_fondoir_à_goudron" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Interv__niveau_pistes__P" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Métro_bâtiment__10_22_avec_feu" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Véhicule_10_07" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Nom abrégé" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="No-arro-élection" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+            <Field name="Arrondissement" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\fire_dataset.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="NO_CAS_ADM" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CASERNE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_NOM_CAS_AD" selected="True" input="Left_" />
+                <SelectField field="Left_NO_CAS_ADM" selected="True" input="Left_" />
+                <SelectField field="Left_OBJECTID" selected="True" input="Left_" />
+                <SelectField field="Left_SpatialObj" selected="True" rename="CaserneSpatialObj" input="Left_" />
+                <SelectField field="Right_INCIDENT_YEAR" selected="True" input="Right_" />
+                <SelectField field="Right_INCIDENT_MONTH" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_NUMBER_OF_INCIDENTS" selected="True" rename="Incidents" input="Right_" />
+                <SelectField field="Right_Date" selected="True" input="Right_" />
+                <SelectField field="Right_INCIDENT_NOM_ARROND" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">.\validation_Results.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>65001</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>validation_Results.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="date" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\validation_Results.csv" type="V_WString" />
+            <Field name="caserne" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\validation_Results.csv" type="V_WString" />
+            <Field name="incidents" size="254" source="File: C:\Users\Sabi\Documents\GitHub\YCBS299_CapstoneProject\validation_Results.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="12" MaxRecords="">.\fire_dataset.shp</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <SpatialObjField>CaserneSpatialObj</SpatialObjField>
+            <Projection />
+            <CodePage>0</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>fire_dataset.shp</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="12" MaxRecords="">.\validationResults.shp</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <Projection />
+            <CodePage>0</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>validationResults.shp</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="126" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="NUMBER_OF_INCIDENTS" selected="True" type="Int64" size="8" />
+            <SelectField field="CASERNE" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="caserne" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="NO_CAS_ADM" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="caserne" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_SpatialObj" selected="True" rename="CaserneSpatialObj" input="Left_" />
+                <SelectField field="Right_caserne" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="198" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CASERNE" action="GroupBy" rename="CASERNE" />
+            <SummarizeField field="INCIDENT_YEAR" action="GroupBy" rename="INCIDENT_YEAR" />
+            <SummarizeField field="INCIDENT_MONTH" action="GroupBy" rename="INCIDENT_MONTH" />
+            <SummarizeField field="NUMBER_OF_INCIDENTS" action="Sum" rename="Sum_NUMBER_OF_INCIDENTS" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[INCIDENT_MONTH]+'/01/' +[INCIDENT_YEAR]" field="Date" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = [INCIDENT_MONTH]+'/01/' +[INCIDENT_YEAR]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -184,8 +513,48 @@
       <Destination ToolID="9" Connection="Right" />
     </Connection>
     <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
       <Origin ToolID="9" Connection="Join" />
       <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
